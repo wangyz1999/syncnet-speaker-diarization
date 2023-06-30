@@ -11,9 +11,9 @@ This project aims to perform lip sync detection using the modified Lip-Sync Expe
 
 ## How it Works
 
-SyncNet is a sophisticated deep learning model specifically designed to analyze and adjust the synchronization between audio and video streams in speech videos. In essence, its original purpose is to determine the appropriate time shift to align the out-of-sync audio and video input, thereby synchronizing the multimodal data.
+[SyncNet](https://arxiv.org/abs/2203.14639) is a sophisticated deep learning model specifically designed to analyze and adjust the synchronization between audio and video streams in speech videos. In essence, its original purpose is to determine the appropriate time shift to align the out-of-sync audio and video input, thereby synchronizing the multimodal data.
 
-Wav2Lip, in an innovative modification of the original SyncNet, employs it as a Lip-Sync Expert to create talking face videos, but with two crucial adaptations. Firstly, it modifies the model to accommodate full-color (RGB) videos, as opposed to the grayscale format originally supported. Secondly, it alters the loss function so that the output produced is a sigmoid-activated score that ranges between 0 and 1. This score quantitatively indicates the level of synchronization between the audio and video inputs.
+[Wav2Lip](https://github.com/Rudrabha/Wav2Lip), in an innovative modification of the original SyncNet, employs it as a Lip-Sync Expert to create talking face videos, but with two crucial adaptations. Firstly, it modifies the model to accommodate full-color (RGB) videos, as opposed to the grayscale format originally supported. Secondly, it alters the loss function so that the output produced is a sigmoid-activated score that ranges between 0 and 1. This score quantitatively indicates the level of synchronization between the audio and video inputs.
 
 To apply the augmented version of SyncNet to a task such as speaker diarization within a multi-speaker video, several preparatory steps must be taken. The initial step involves utilizing a face detection algorithm to isolate the video stream for each speaker. Subsequently, for each subject's facial video, corresponding segments of the video and the Mel spectrogram of the audio are concurrently cropped into matching and overlapping segments.
 
