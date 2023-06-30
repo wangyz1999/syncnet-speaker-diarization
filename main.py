@@ -9,7 +9,7 @@ import mediapipe as mp
 import numpy as np
 import torch
 
-from syncnet import SyncNet_color
+from .syncnet import SyncNet_color
 from utils import process_slices, resize_frames, compute_iou, save_bbox_video, crop_faces, write_individual_video
 
 warnings.filterwarnings("ignore")
@@ -20,7 +20,7 @@ parser.add_argument('--video', type=str, default='input.mp4', help='path to the 
 parser.add_argument('--audio', type=str, default='audio.aac', help='path to the audio file')
 parser.add_argument('--output', type=str, default='output.mp4', help='path to the output file')
 parser.add_argument('--model', type=str, default='lipsync_expert.pth', help='path to the model file')
-parser.add_argument('--save_face', type=bool, default=True, help='save individual face video')
+parser.add_argument('--save_face', type=bool, default=False, help='save individual face video')
 args = parser.parse_args()
 
 model = SyncNet_color()
