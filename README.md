@@ -43,12 +43,13 @@ The project mainly consists of a Python script for lip sync detection and analys
 - input.mp4: Sample input video.
 
 
-### Usage
-To use the lip sync detection, follow these steps:
+### Download Pretrained Model
 
-Download the pre-trained SyncNet model pth file from Wav2Lip repository [Here](https://github.com/Rudrabha/Wav2Lip) and [Here](https://iiitaphyd-my.sharepoint.com/personal/radrabha_m_research_iiit_ac_in/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fradrabha%5Fm%5Fresearch%5Fiiit%5Fac%5Fin%2FDocuments%2FWav2Lip%5FModels%2Flipsync%5Fexpert%2Epth&parent=%2Fpersonal%2Fradrabha%5Fm%5Fresearch%5Fiiit%5Fac%5Fin%2FDocuments%2FWav2Lip%5FModels&ga=1)
+Download the pre-trained SyncNet model pth file from Wav2Lip repository though this link [Here](https://iiitaphyd-my.sharepoint.com/:u:/g/personal/radrabha_m_research_iiit_ac_in/EQRvmiZg-HRAjvI6zqN9eTEBP74KefynCwPWVmF57l-AYA?e=ZRPHKP)
 and place it in the same directory as the script
 
+### Usage
+To use the lip sync detection, follow these steps:
 
 Run the script with the required arguments. You can change the default arguments in the script if needed:
 ```
